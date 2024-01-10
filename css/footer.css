@@ -1,0 +1,53 @@
+
+/* FOOTER */
+footer {
+    background-color: #9A99FF;
+    padding: 2vw 20vw;
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    gap: 1vw;
+    font-size: .9vw;
+
+    margin-bottom: 1vw;
+}
+.credit {
+    font-size: .8vw;
+    color: #bdbdbd;
+}
+
+
+@media only screen and (max-width: 868px) {
+    footer {
+        padding: 2vw 5vw;
+    }
+    .footer-nav {
+        gap: 2vw;
+        font-size: 1.5vw;
+    }
+    .credit {
+        font-size: 1.3vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        padding: 3.5vw 10vw;
+    }
+    .footer-nav {
+        gap: 3.5vw;
+        font-size: 2.5vw;
+    }
+    .credit {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    footer {
+        padding: 3.5vw 2vw;
+    }
+}

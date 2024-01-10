@@ -1,0 +1,181 @@
+header {
+
+}
+
+.container-reseaux {
+    padding: 1vw;
+    padding-left: 20vw;
+
+    background-color: #CCFFFF;
+}
+
+#container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: #9A99FF;
+
+    border-top: .1vw solid black;
+    border-bottom: .1vw solid black;
+    padding: .5vw;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+#container-header .logo {
+    width: 20vw;
+}
+#container-header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+    font-size: 1vw;
+}
+#container-header nav .btn {
+    position: relative;
+    cursor: pointer;
+}
+#container-header nav .btn:hover {
+    color: red;
+}
+
+
+#container-header nav .btn .sous{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    font-size: .8vw;
+}
+#container-header nav .btn .sous .btnSous {
+    padding: .5vw;
+    padding-left: 1vw;
+}
+
+#container-header nav .btn .sous .btnSous:hover a {
+    color: red;
+}
+
+#container-header nav .btn .sous .btnSous.white {
+    background-color: white;
+}
+
+#container-header nav .btn .sous .btnSous.grey {
+    background-color: grey;
+}
+
+#container-header nav .btn .sous a{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+#container-header nav .btn:hover .sous{
+    display: block;
+}
+#container-header nav .btn:active .sous{
+    display: block;
+}
+
+
+@media only screen and (max-width: 868px) {
+    .container-reseaux {
+        padding: 2vw 5vw;
+    }
+    #container-header {
+        #flex-direction: column;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        gap: 2vw;
+
+        flex-direction: column;
+
+        padding: 2vw 5vw;
+    }
+    #container-header .logo {
+        width: 28vw;
+    }
+    #container-header nav {
+        font-size: 1.5vw;
+        gap: 3vw;
+    }
+
+    #container-header nav .btn .sous{
+        font-size: 1.5vw;
+    }
+    #container-header nav .btn .sous .btnSous {
+        padding: .5vw;
+        padding-left: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container-header .logo {
+        width: 50vw;
+    }
+
+    .container-reseaux {
+        padding: 2vw 10vw;
+    }
+    .container-reseaux img {
+        width: 5vw;
+    }
+
+    #container-header {
+        padding: 2vw 10vw;
+    }
+
+    #container-header {
+        #flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5vw;
+
+        flex-direction: column;
+
+        padding: 5vw 10vw;
+    }
+
+    #container-header nav {
+        flex-direction: column;
+        font-size: 2.5vw;
+        width: 100%;
+        gap: 0;
+    }
+    #container-header nav .btn {
+        border-top: .1vw solid #cecece;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    #container-header nav .btn .name {
+        margin-left: 2vw;
+    }
+
+
+
+    #container-header nav .btn .sous{
+        font-size: 2.5vw;
+    }
+    #container-header nav .btn .sous .btnSous {
+        padding: 1vw;
+        padding-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container-reseaux {
+        padding: 2vw 2vw;
+    }
+
+    #container-header {
+        padding: 2vw 2vw;
+    }
+}
