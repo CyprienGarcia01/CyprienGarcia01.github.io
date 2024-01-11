@@ -19,10 +19,8 @@ header {
 
     border-top: .1vw solid black;
     border-bottom: .1vw solid black;
-    padding: .5vw;
 
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding: 1vw 20vw;
 }
 #container-header .logo {
     width: 20vw;
